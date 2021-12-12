@@ -1,13 +1,20 @@
-<%= render 'search' %>
+<%= render 'search_form' %>
 <article>
-  <% @articles.each do |article| %>
-    <header></header>
-    <div >
-      <div >
-        <%= link_to article do %>
-          <%= article.title %>
-        <% end %>
-      </div>
-    </div>
-  <% end %>
+    
+    <% if @articles.empty? %>
+        <div>
+            No results. Try search something else.
+        </div>
+    <% end %>
+    
+    <% @articles.each do |article| %>
+        <header></header>
+        <div >
+        <div >
+            <%= link_to article do %>
+            <%= article.title %>
+            <% end %>
+        </div>
+        </div>
+    <% end %>
 </article>
