@@ -1,22 +1,24 @@
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <h2><%= @article.title %></h2>            
 
-<p>
-  <strong>Is published:</strong>
-  <%= @article.is_published %>
-</p>
+          <p>
+            <strong>Published at:</strong>
+            <%= @article.publish_date %>
+          </p>
 
-<p>
-  <strong>Publish date:</strong>
-  <%= @article.publish_date %>
-</p>
+          <p>
+            <strong>Content:</strong>
+            <%= @article.content %>
+          </p>
 
-<p>
-  <strong>Content:</strong>
-  <%= @article.content %>
-</p>
-
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
+          <%= link_to 'Edit', edit_article_path(@article) %> |
+          <%= link_to 'Back', articles_path %>
+            
+        </div>
+        
+        <div class="col-3"></div>
+    </div>
+</div>
