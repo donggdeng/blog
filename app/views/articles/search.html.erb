@@ -1,0 +1,12 @@
+<article>
+  <% @articles.each do |article| %>
+    <header></header>
+    <div >
+      <div >
+        <%= link_to article do %>
+          <%= article.title %>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</article>
