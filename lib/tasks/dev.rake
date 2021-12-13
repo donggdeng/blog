@@ -4,7 +4,7 @@ namespace :dev do
       
       Article.delete_all
   
-      100.times do |i|
+      1000.times do |i|
         topic = Article.create!( title:  Faker::Lorem.sentence.titleize,
                                content:  Faker::Lorem.paragraph(sentence_count: rand(10..100)),
                                is_published: true,
