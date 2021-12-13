@@ -1,0 +1,25 @@
+div.sign-up {
+    height: 100vh;
+    width: 100%;
+}
+
+div.sign-up-core {
+    position: relative;
+    top: 40%;
+    -webkit-transform: translateY(-40%);
+    -ms-transform: translateY(-40%);
+    transform: translateY(-40%);
+}
+
+div.login-container {
+    height: 100vh;
+    width: 100%;
+}
+
+div.login {
+    position: relative;
+    top: 40%;
+    -webkit-transform: translateY(-40%);
+    -ms-transform: translateY(-40%);
+    transform: translateY(-40%);
+}
