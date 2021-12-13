@@ -29,4 +29,10 @@ RSpec.describe Article, type: :model do
     end
 
   end
+
+  context "callbacks" do
+    it 'should set views count to 0 once created' do
+      expect(Article.first.views_count).to eq(0)
+    end
+  end
 end
