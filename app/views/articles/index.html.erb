@@ -9,7 +9,7 @@
                 <%= link_to 'New Article', new_article_path, class: "btn btn-primary" %>
               </div>
               <div class="float-lg-end">
-                <%= render 'search_form' %>
+                <%= render 'search_form', locals: {q: params['q']} %>
               </div>
             </div>
 
