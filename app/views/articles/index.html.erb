@@ -18,7 +18,8 @@
                 <tr>
                   <th scope="col">Title</th>
                   <th scope="col">Publish date</th>
-                  <th scope="col">Views count</th>
+                  <th scope="col">Views</th>
+                  <th scope="col">Author</th>
                   <th scope="col" colspan="3">Actions</th>
                 </tr>
               </thead>
@@ -33,6 +34,7 @@
                     </td>
                     <td class="col"><%= article.publish_date %></td>
                     <td class="col"><%= article.views_count %></td>
+                    <td class="col"><%= article.author %></td>
                     <td class="col"><%= link_to fa_icon("search-plus"), article %></td>
                     <td class="col"><%= link_to fa_icon("edit"), edit_article_path(article) %></td>
                     <td class="col"><%= link_to fa_icon("trash"), article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
