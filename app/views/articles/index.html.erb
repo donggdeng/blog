@@ -25,7 +25,11 @@
               <tbody>
                 <% @articles.each do |article| %>
                   <tr>
-                    <td class="col"><%= article.title %></td>
+                    <td class="col">
+                      <%= link_to article, class: "article-title" do %>
+                          <%= article.title %>
+                      <% end %>
+                    </td>
                     <td class="col"><%= article.publish_date %></td>
                     <td class="col"><%= link_to fa_icon("search-plus"), article %></td>
                     <td class="col"><%= link_to fa_icon("edit"), edit_article_path(article) %></td>

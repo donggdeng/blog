@@ -11,11 +11,23 @@
     text-decoration: none;
     color: black;
 
-    :hover {
-        text-orientation: underline;
-    }
+    
 }
+
+.search-result a:hover {
+    text-orientation: underline;
+}
+
 
 .articles table a i:hover{
     transform: scale(1.5);
+}
+
+.articles a.article-title {
+    text-decoration: none;
+    color: black;
+}
+
+.articles a.article-title:hover{
+    color: gray;
 }
