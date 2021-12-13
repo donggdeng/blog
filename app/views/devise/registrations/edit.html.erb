@@ -12,17 +12,15 @@
               <div class="field mb-3">
                 <%= f.label :email, class: "form-label" %><br />
                 <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
+                <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+                  <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+                <% end %>
               </div>
-
-              <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-                <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-              <% end %>
 
               <div class="field mb-3">
                 <%= f.label :password, class: "form-label" %> <i>(leave blank if you don't want to change it)</i><br />
                 <%= f.password_field :password, autocomplete: "new-password", class: "form-control" %>
                 <% if @minimum_password_length %>
-                  <br />
                   <em><%= @minimum_password_length %> characters minimum</em>
                 <% end %>
               </div>
@@ -42,7 +40,7 @@
               </div>
             <% end %>
 
-            <div class="card" style="border-color: red;">
+            <div class="card mb-5" style="border-color: red;">
               <div class="card-body">
                 <h5 class="card-title">Cancel my account</h5>
                 <p class="card-text">Unhappy?</p>
