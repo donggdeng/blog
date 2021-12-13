@@ -3,25 +3,34 @@
         <div class="col-3"></div>
         <div class="col-6">
             <%= render 'search_form' %>
-            <article>
-                
-                <% if @articles.empty? %>
-                    <div>
-                        No results. Try search something else.
-                    </div>
-                <% end %>
-                
-                <% @articles.each do |article| %>
-                    <header></header>
-                    <div >
-                    <div >
-                        <%= link_to article do %>
-                        <%= article.title %>
-                        <% end %>
-                    </div>
-                    </div>
-                <% end %>
-            </article>
+            <div class="mt-3">
+                <article>
+                    <% if @articles.empty? %>
+                        <div>
+                            No results. Try search something else.
+                        </div>
+                    <% else %>
+                        <div class="search-result">
+                            <table class="table table-bordered mt-3">
+                                <tbody>
+                                    <% @articles.each do |article| %>
+                                        <tr>
+                                            <td>
+                                                <div class="mb-1">
+                                                    <%= link_to article do %>
+                                                        <%= article.title %>
+                                                    <% end %>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    <% end %>
+                                </tbody>
+                            </table>
+                        </div>
+                    <% end %>
+                </article>
+            </div>
+            
 
         </div>
         
