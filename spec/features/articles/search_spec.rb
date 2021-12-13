@@ -16,7 +16,7 @@ feature "Searching articles" do
       click_button 'Log in'
     end
   
-    scenario "Login and successfully update article" do
+    scenario "Search for articles by title successfully" do
         expect(page).to have_content "One"
 
         fill_in 'Search', with: "one"
@@ -34,5 +34,14 @@ feature "Searching articles" do
         expect(page).to have_content "Title One Plus"
         expect(page).to have_content "Title Two"
         expect(page).to have_content "Title Three"
+    end
+
+    scenario "Search for articles by title with no results" do
+        expect(page).to have_content "One"
+
+        fill_in 'Search', with: "Four"
+        click_button 'Search'
+
+        expect(page).to have_content "No results"
     end
 end
