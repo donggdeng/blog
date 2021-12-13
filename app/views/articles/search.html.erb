@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-3"></div>
         <div class="col-6">
-            <%= render 'search_form' %>
+            <%= render 'search_form', locals: {q: params['q']} %>
             <div class="mt-3">
                 <article>
                     <% if @articles.empty? %>
