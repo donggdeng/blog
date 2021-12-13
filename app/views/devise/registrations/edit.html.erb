@@ -42,9 +42,13 @@
               </div>
             <% end %>
 
-            <p class="lead">Cancel my account</p>
-
-            <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+            <div class="card" style="border-color: red;">
+              <div class="card-body">
+                <h5 class="card-title">Cancel my account</h5>
+                <p class="card-text">Unhappy?</p>
+                <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %>
+              </div>
+          </div>
 
           </div>
           <div class="col-4"></div>
