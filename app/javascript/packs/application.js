@@ -8,6 +8,9 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import 'bootstrap'
+import flatpickr from "flatpickr"
+import "flatpickr/dist/flatpickr.min.css"
+
 
 //= require jquery3
 //= require popper
@@ -16,3 +19,5 @@ import 'bootstrap'
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+flatpickr(".datepicker", {})
