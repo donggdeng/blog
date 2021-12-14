@@ -16,6 +16,11 @@
     <%= form.text_field :title, class: "form-control" %>
   </div>
 
+  <div class="field mb-3">
+    <%= form.label :author, class: "form-label" %>
+    <%= form.text_field :author, class: "form-control" %>
+  </div>
+
   <div class="field form-check mb-3">
     <%= form.label :is_published, class: "form-check-label" %>
     <%= form.check_box :is_published, class: "form-check-input" %>
