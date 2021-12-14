@@ -1,24 +1,21 @@
-# README
+## Project Description/Summary
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project implements a basic CRUD and search feature for blogs.
 
-Things you may want to cover:
+## Ruby version
 
-* Ruby version
+3.0.2
 
-* System dependencies
+## Nodejs version
 
-* Configuration
+16.12.0
 
-* Database creation
+## Tasks to run for setting up
 
-* Database initialization
+You need to create and migrate your local database to start the project. The last task dev:fake will generate 1000 random articles for you in the database.
 
-* How to run the test suite
+<pre><code>bundle install<code></pre>
 
-* Services (job queues, cache servers, search engines, etc.)
+<pre><code>yarn install<code></pre>
 
-* Deployment instructions
-
-* ...
+<pre><code>rake db:create db:migrate dev:fake<code></pre>
