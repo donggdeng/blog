@@ -29,3 +29,39 @@
 .articles a.article-title:hover{
     color: gray;
 }
+
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+        height: auto;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    80% {
+        opacity: 1;
+        height: auto;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    99% {
+        opacity: 0;
+        height: auto;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    100%{
+        opacity: 0;
+        height: 0;
+        padding: 0;
+        margin-bottom: 0;
+    }
+}
+
+p.alert {
+    animation-name: fadeOut;
+    animation-duration: 3500ms;
+    animation-fill-mode: forwards;
+}
