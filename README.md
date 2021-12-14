@@ -30,7 +30,7 @@ rake db:create db:migrate dev:fake
 
 ## Tests
 
-Rspec and Capybara are used for automated testing.
+Rspec and Capybara are used for automated testing. The command 'rspec' will run all the tests. 
 
 1. Unit tests for Article search funtion
 2. Function tests for happy path of User Registration and Login
