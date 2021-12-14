@@ -58,7 +58,7 @@ class ArticlesController < ApplicationController
   end
 
   def search
-    @articles = Article.search_by_title(params[:q])
+    @articles = Article.search_by_title_or_author(params[:q])
   end
 
   private
