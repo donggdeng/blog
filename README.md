@@ -14,8 +14,6 @@ This project implements a basic CRUD and search feature for blogs.
 
 You need to create and migrate your local database to start the project. The last task dev:fake will generate 1000 random articles for you in the database.
 
-<pre><code>bundle install<code></pre>
-
-<pre><code>yarn install<code></pre>
-
-<pre><code>rake db:create db:migrate dev:fake<code></pre>
+<code>bundle install<code>
+<code>yarn install<code>
+<code>rake db:create db:migrate dev:fake<code>
