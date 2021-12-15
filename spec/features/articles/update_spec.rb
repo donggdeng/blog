@@ -28,10 +28,13 @@ feature "Updating article" do
       expect(page).to have_content "Editing Article"
       
       fill_in "Title", with: "New Title"
+      # fill_in "Content", with: "New Content"
 
       click_button "Update Article"
 
       expect(page).to have_content "success"
       expect(page).to have_content "New Title"
+      # expect(page).to have_content "New Content"
+
     end
 end
