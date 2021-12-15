@@ -10,6 +10,10 @@ import "channels"
 import 'bootstrap'
 import flatpickr from "flatpickr"
 import "flatpickr/dist/flatpickr.min.css"
+// import "trix"
+// import "@rails/actiontext"
+require("trix")
+require("@rails/actiontext")
 
 //= require jquery3
 //= require popper

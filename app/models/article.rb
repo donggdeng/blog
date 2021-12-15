@@ -1,4 +1,6 @@
 class Article < ApplicationRecord
+    has_rich_text :content
+
     attribute :views_count, default: 0
 
     validates :title, presence: true
