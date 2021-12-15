@@ -27,6 +27,7 @@ rake db:create db:migrate dev:fake
 2. View articles (paginated)
 3. View, update and delete articles 
 4. Search articles according to title or author
+5. Rich editor for article content editing
 
 ## Tests
 
